@@ -14,10 +14,68 @@
 
 .login-card {
   display: flex;
-  background-color: rgb(0, 255, 255);
-  opacity: 0.4;
-  /* border: solid 1px; */
+  background-color: hsla(197, 47%, 67%, 0.5);
+  justify-content: space-between;
   margin: auto;
-  width: 40%;
-  height: 25%;
+  height: 180px;
+  width: 600px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.login,
+.register {
+  width: 50%;
+}
+
+.element-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px 5px;
+}
+
+.input-container h4 {
+  width: 80px;
+}
+
+.element-container button {
+  align-self: center;
+  width: 5em;
+  height: 2em;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.element-container p {
+  align-self: center;
+}
+
+.element-container p:hover {
+  cursor: pointer;
+}
+
+.hidden-card {
+  /* visibility: hidden; */
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+.cover {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  background-color: rgb(183, 252, 229);
+  border-radius: 10px;
+  transition: transform ease 1s;
+}
+
+.cover.active {
+  transform: translate(300px);
 }
